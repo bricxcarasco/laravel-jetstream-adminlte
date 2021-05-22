@@ -87,7 +87,7 @@
 								<li class="nav-item">
 										<inertia-link :href="route('dashboard')" class="nav-link">
 												<i class="nav-icon fas fa-home"></i>
-												<p>Site</p>
+												<p>Jetstream Site</p>
 										</inertia-link>
 								</li>
                 <li class="nav-item">
