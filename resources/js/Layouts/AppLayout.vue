@@ -18,6 +18,9 @@
             <jet-nav-link :href="route('dashboard')" :active="route().current('dashboard')">
               Dashboard
             </jet-nav-link>
+            <jet-nav-link :href="route('admin.dashboard.index')" :active="route().current('admin.dashboard.index')">
+              Admin LTE
+            </jet-nav-link>
           </ul>
 
           <!-- Right Side Of Navbar -->

@@ -1,23 +1,27 @@
 <template>
-    <app-layout>
-        <template #header>
-            <h2 class="h4 font-weight-bold">
-                Dashboard
-            </h2>
-        </template>
+  <app-template>
+    <template #header>
+      <admin-header headerName="Dashboard" />
+    </template>
 
-        <welcome />
-    </app-layout>
+    <admin-dashboard />
+  </app-template>
 </template>
 
 <script>
-    import AppLayout from '@/Layouts/AppLayout'
-    import Welcome from '@/Jetstream/Welcome'
+import AppTemplate from '@/Layouts/AppTemplate'
+import AdminHeader from '@/Parts/Header'
+import AdminDashboard from './Components/Main/Dashboard'
 
-    export default {
-        components: {
-            AppLayout,
-            Welcome,
-        },
-    }
+export default {
+  components: {
+    AppTemplate,
+    AdminHeader,
+    AdminDashboard
+  }
+}
 </script>
+
+<style>
+
+</style>

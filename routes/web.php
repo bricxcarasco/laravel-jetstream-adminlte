@@ -26,10 +26,10 @@ Route::get('/', function () {
     ]);
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return Inertia::render('Dashboard');
+Route::middleware(['auth:sanctum', 'verified'])->get('/old_dashboard', function () {
+    return Inertia::render('OldDashboard');
 })->name('dashboard');
 
-Route::prefix('admin')->name('admin')->middleware(['auth:sanctum', 'verified'])->group(function() {
+Route::prefix('/')->name('admin.')->middleware(['auth:sanctum', 'verified'])->group(function() {
     Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
 });
